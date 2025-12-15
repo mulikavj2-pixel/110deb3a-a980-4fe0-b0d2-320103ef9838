@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import { ThemeProvider } from "@/providers/themeProvider/ThemeProvider";
 import NavbarStyleCentered from '@/components/navbar/NavbarStyleCentered/NavbarStyleCentered';
@@ -324,7 +324,6 @@ export default function CoffeePage() {
       <div id="footer" data-section="footer">
         <FooterBaseReveal
           logoSrc="https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_30ordogEOn7VO6LZdIWb5atLXky/uploaded-1765811496067-y11xq838.jpg"
-          logoAlt="Coffee Shop Logo"
           columns={[
             {
               title: "Location",
