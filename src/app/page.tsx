@@ -4,8 +4,7 @@ import { ThemeProvider } from "@/providers/themeProvider/ThemeProvider";
 import NavbarStyleCentered from '@/components/navbar/NavbarStyleCentered/NavbarStyleCentered';
 import HeroBillboardMetrics from '@/components/sections/hero/HeroBillboardMetrics';
 import MediaSplitAbout from '@/components/sections/about/MediaSplitAbout';
-import ProductCardOne from '@/components/sections/product/ProductCardOne';
-import TestimonialCardSix from '@/components/sections/testimonial/TestimonialCardSix';
+import TestimonialCardTwelve from '@/components/sections/testimonial/TestimonialCardTwelve';
 import TeamCardNine from '@/components/sections/team/TeamCardNine';
 import FaqBase from '@/components/sections/faq/FaqBase';
 import ContactCenterForm from '@/components/sections/contact/ContactCenterForm';
@@ -33,8 +32,8 @@ export default function CoffeePage() {
           navItems={[
             { name: "Home", id: "hero" },
             { name: "About", id: "about" },
-            { name: "Menu", id: "menu" },
             { name: "Reviews", id: "testimonials" },
+            { name: "Team", id: "team" },
             { name: "Contact", id: "contact" }
           ]}
           button={{
@@ -72,8 +71,8 @@ export default function CoffeePage() {
           ]}
           buttons={[
             {
-              text: "View Menu",
-              href: "menu"
+              text: "View Reviews",
+              href: "testimonials"
             },
             {
               text: "Visit Us",
@@ -104,107 +103,37 @@ export default function CoffeePage() {
         />
       </div>
 
-      <div id="menu" data-section="menu">
-        <ProductCardOne
-          products={[
-            {
-              id: "1",
-              name: "Signature Espresso",
-              price: "$4.50",
-              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_30ordogEOn7VO6LZdIWb5atLXky/uploaded-1765811501329-m43rtv1c.jpg",
-              imageAlt: "Double shot espresso"
-            },
-            {
-              id: "2",
-              name: "Creamy Latte",
-              price: "$5.50",
-              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_30ordogEOn7VO6LZdIWb5atLXky/uploaded-1765811502568-pvda52k0.jpg",
-              imageAlt: "Latte with latte art"
-            },
-            {
-              id: "3",
-              name: "Fresh Pastry",
-              price: "$6.00",
-              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_30ordogEOn7VO6LZdIWb5atLXky/uploaded-1765811503878-xkuryyg8.jpg",
-              imageAlt: "Freshly baked pastry"
-            }
-          ]}
-          gridVariant="three-columns-all-equal-width"
-          animationType="slide-up"
-          containerStyle="default"
-          title="Featured Menu Items"
-          description="Explore our carefully curated selection of premium coffee beverages and fresh pastries"
-          tag="Menu Highlights"
-          textboxLayout="default"
-          useInvertedBackground="noInvert"
-          buttons={[
-            {
-              text: "View Full Menu",
-              href: "contact"
-            }
-          ]}
-        />
-      </div>
-
       <div id="testimonials" data-section="testimonials">
-        <TestimonialCardSix
+        <TestimonialCardTwelve
           testimonials={[
             {
               id: "1",
               name: "Sarah Mitchell",
-              handle: "@coffeeaddict",
-              testimonial: "The best coffee in town. Every visit feels like home. The baristas know my order and treat me like family.",
               imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_30ordogEOn7VO6LZdIWb5atLXky/uploaded-1765811505311-d9g4i6j7.jpg",
               imageAlt: "Sarah Mitchell"
             },
             {
               id: "2",
               name: "James Chen",
-              handle: "@morningrituals",
-              testimonial: "Consistently excellent quality. The attention to detail in every cup shows their passion for coffee.",
               imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_30ordogEOn7VO6LZdIWb5atLXky/uploaded-1765811506440-zi42baz7.jpg",
               imageAlt: "James Chen"
             },
             {
               id: "3",
               name: "Emma Rodriguez",
-              handle: "@barista_dreams",
-              testimonial: "A true specialty coffee experience. The ambiance and service make this my favorite coffee destination.",
               imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_30ordogEOn7VO6LZdIWb5atLXky/uploaded-1765811507990-n7qp16fn.jpg",
               imageAlt: "Emma Rodriguez"
             },
             {
               id: "4",
               name: "Michael Johnson",
-              handle: "@coffee_explorer",
-              testimonial: "Their single-origin selections are outstanding. I love discovering new flavors every week.",
               imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_30ordogEOn7VO6LZdIWb5atLXky/uploaded-1765811509245-ysf2fjhm.jpg",
               imageAlt: "Michael Johnson"
-            },
-            {
-              id: "5",
-              name: "Lisa Anderson",
-              handle: "@latteart_fan",
-              testimonial: "Perfect spot for meetings or quiet work sessions. Great wifi, great coffee, great vibes.",
-              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_30ordogEOn7VO6LZdIWb5atLXky/uploaded-1765811510624-73ag1fs5.jpg",
-              imageAlt: "Lisa Anderson"
-            },
-            {
-              id: "6",
-              name: "David Wilson",
-              handle: "@coffeesnob",
-              testimonial: "Where sustainability meets exceptional taste. Supporting local farms has never tasted so good.",
-              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_30ordogEOn7VO6LZdIWb5atLXky/uploaded-1765811512269-wl5o2btu.jpg",
-              imageAlt: "David Wilson"
             }
           ]}
-          animationType="slide-up"
-          title="What Coffee Lovers Say"
-          description="Real stories from our community of passionate coffee enthusiasts"
-          tag="Customer Reviews"
-          textboxLayout="default"
+          cardTitle="Over 10,000 customers trust us to deliver exceptional coffee experiences"
+          cardTag="See what they say"
           useInvertedBackground="noInvert"
-          speed={30}
         />
       </div>
 
@@ -240,6 +169,7 @@ export default function CoffeePage() {
           containerStyle="default"
           textboxLayout="default"
           useInvertedBackground="noInvert"
+          gridVariant="three-columns-all-equal-width"
         />
       </div>
 
@@ -354,8 +284,8 @@ export default function CoffeePage() {
                   href: "hero"
                 },
                 {
-                  label: "Menu",
-                  href: "menu"
+                  label: "Reviews",
+                  href: "testimonials"
                 },
                 {
                   label: "About",
