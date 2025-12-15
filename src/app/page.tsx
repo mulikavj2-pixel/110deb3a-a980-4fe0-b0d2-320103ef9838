@@ -169,7 +169,6 @@ export default function CoffeePage() {
           containerStyle="default"
           textboxLayout="default"
           useInvertedBackground="noInvert"
-          gridVariant="three-columns-all-equal-width"
         />
       </div>
 
